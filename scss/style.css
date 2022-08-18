@@ -9401,7 +9401,7 @@ body {
   background: #fafafa; }
 
 .rounded-1 {
-  border-radius: 40px; }
+  border-radius: 55px; }
 
 .hidden {
   display: none; }
@@ -9605,6 +9605,36 @@ body {
     @media (max-width: 991px) {
       #main-nav .navbar-nav .hamburger-icon {
         display: none; } }
+.products h2 {
+  font-size: 1.875rem;
+  text-transform: none;
+  color: #000; }
+
+.products h2 .zzz {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #24A49B; }
+
+.products h2 .bbb {
+  font-size: 2.188rem; }
+
+.products span .ccc {
+  font-size: 2.813rem;
+  text-transform: uppercase;
+  color: #24A49B; }
+
+.products .vv {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; }
+
+.products .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 .owl-nav {
   position: absolute;
   top: 20%;
@@ -9637,7 +9667,7 @@ body {
   padding-right: 0.5rem;
   position: absolute;
   font-weight: bold;
-  bottom: 0;
+  bottom: -4px;
   right: 0;
   left: 0;
   width: 100%;
@@ -10673,12 +10703,20 @@ ul.social-list li a {
   display: none;
   background-color: #fff;
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
-  z-index: 999; }
+  z-index: 55;
+  width: 5.188rem;
+  height: 5.188rem; }
 
 #btn-donate {
+  padding: 1rem;
   position: fixed;
   bottom: 30%;
-  right: 20px; }
+  right: 20px;
+  width: 6.875rem;
+  height: 6.875rem;
+  z-index: 55; }
+  #btn-donate img {
+    width: 90%; }
 
 footer {
   color: white;
