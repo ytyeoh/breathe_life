@@ -9342,7 +9342,7 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-size: 3rem;
   text-transform: capitalize;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #534CA0; }
   @media (min-width: 1600px) {
     h2 {
@@ -10715,13 +10715,20 @@ ul.social-list li a {
   width: 6.875rem;
   height: 6.875rem;
   z-index: 55; }
+  @media (max-width: 575px) {
+    #btn-donate {
+      width: 3.875rem;
+      height: 3.875rem; } }
   #btn-donate img {
     width: 90%; }
 
 footer {
   color: white;
   font-size: 40px;
-  padding: 0.5em 1em; }
+  padding: 0.5em 10em; }
+  @media (max-width: 767px) {
+    footer {
+      padding: 0.5em 1em; } }
   footer a {
     color: white; }
     @media (max-width: 991px) {
