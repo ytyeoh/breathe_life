@@ -9406,6 +9406,11 @@ label {
 .btn-primary {
   background-color: #24A49B; }
 
+.btn-primary:hover {
+  color: #24A49B;
+  background-color: transparent;
+  border-color: #24A49B; }
+
 .btn-round-small {
   width: 2rem;
   height: 2rem;
