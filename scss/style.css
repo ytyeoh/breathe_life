@@ -9315,6 +9315,9 @@ h1, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700; }
 
+.font-cursive {
+  font-family: "Kaushan Script", cursive; }
+
 .f-100 {
   font-weight: 100 !important; }
 
@@ -9444,6 +9447,9 @@ body {
 
 .w-90 {
   width: 80%; }
+
+.w-30 {
+  width: 30%; }
 
 .modal-backdrop {
   z-index: -1; }
@@ -10583,42 +10589,11 @@ ul.social-list li a {
   @media (max-width: 575px) {
     #content-50 p {
       font-size: 1rem; } }
-.technology-featured .block {
-  display: flex; }
-  @media (max-width: 767px) {
-    .technology-featured .block {
-      flex-wrap: wrap; } }
-  .technology-featured .block .content {
-    flex-basis: 100%;
-    align-self: center;
-    margin-right: 20px; }
-    @media (max-width: 767px) {
-      .technology-featured .block .content {
-        flex-grow: 1;
-        width: 100%;
-        margin: 0;
-        text-align: center; } }
-    .technology-featured .block .content h2 {
-      font-size: 84px;
-      margin-bottom: 20px;
-      font-weight: 700; }
-      @media (max-width: 767px) {
-        .technology-featured .block .content h2 {
-          font-size: 3rem; } }
-      .technology-featured .block .content h2 span {
-        clip-path: inset(0 100% 0 0); }
-    .technology-featured .block .content p {
-      letter-spacing: 1px; }
-  .technology-featured .block .video {
-    justify-content: center;
-    align-self: center;
-    flex-basis: 100%;
-    margin-left: 10px;
-    overflow: hidden; }
-    @media (max-width: 767px) {
-      .technology-featured .block .video {
-        flex-grow: 1;
-        width: 100%; } }
+.desc h2 {
+  font-size: 2.3rem; }
+  @media (min-width: 1600px) {
+    .desc h2 {
+      font-size: 2.813rem; } }
 .company-fun-facts h2 {
   font-size: 60px;
   margin-bottom: 60px;
