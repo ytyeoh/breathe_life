@@ -9272,6 +9272,16 @@ li.fancybox-thumbs-loading {
   font-family: 'butlerbold';
   src: url("../fonts/butler_bold-webfont.woff2") format("woff2"), url("../fonts/butler_bold-webfont.woff") format("woff"); }
 
+/* kaushan-script-regular - latin */
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/kaushan-script-v14-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/kaushan-script-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/kaushan-script-v14-latin-regular.woff2") format("woff2"), url("../fonts/kaushan-script-v14-latin-regular.woff") format("woff"), url("../fonts/kaushan-script-v14-latin-regular.ttf") format("truetype"), url("../fonts/kaushan-script-v14-latin-regular.svg#KaushanScript") format("svg");
+  /* Legacy iOS */ }
+
 /* averia-serif-libre-regular - latin */
 @font-face {
   font-family: 'Averia Serif Libre';
@@ -9421,7 +9431,7 @@ label {
       height: 3rem;
       font-size: 1.875rem; } }
 body {
-  background: #fafafa; }
+  background: #F3F1F1; }
 
 .rounded-1 {
   border-radius: 55px; }
@@ -9446,6 +9456,13 @@ body {
 
 .p-10 {
   padding: 10rem; }
+
+.px-6 {
+  padding-left: 5rem;
+  padding-right: 5rem; }
+
+.pr-6 {
+  padding-right: 5rem; }
 
 .px-10 {
   padding-left: 10rem;
@@ -9738,8 +9755,7 @@ body {
   font-size: 1.125rem; }
 
 .story h3 {
-  font-size: 2.375rem;
-  font-weight: 600; }
+  font-size: 2.375rem; }
 
 .hero-slider-wrapper {
   position: relative;
@@ -10763,7 +10779,7 @@ ul.social-list li a {
 footer {
   margin-top: 3rem;
   color: #383737;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   padding: 0.5em 8em; }
   @media (min-width: 1600px) {
     footer {
