@@ -9299,7 +9299,7 @@ p {
     p {
       font-size: 1.5rem; } }
 h1, h3, h4, h5, h6 {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #383737; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9317,8 +9317,14 @@ h1, h2, h3, h4, h5, h6 {
 .f-900 {
   font-weight: 900 !important; }
 
+.font-3 {
+  font-size: 2.188rem; }
+
 .text-blue {
   color: #534CA0; }
+
+.text-red {
+  color: #EE2849; }
 
 .text-green {
   color: #24A49B; }
@@ -9397,6 +9403,18 @@ label {
   min-width: 3rem;
   min-height: 3rem; }
 
+.btn-primary {
+  background-color: #24A49B; }
+
+.btn-round-small {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.3rem; }
+  @media (min-width: 1600px) {
+    .btn-round-small {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.875rem; } }
 body {
   background: #fafafa; }
 
@@ -9417,6 +9435,9 @@ body {
 
 .text-black {
   color: black; }
+
+.text-blue {
+  color: #534CA0; }
 
 .p-10 {
   padding: 10rem; }
@@ -9706,6 +9727,10 @@ body {
   bottom: 8px;
   right: 16px;
   font-size: 1.125rem; }
+
+.story h3 {
+  font-size: 2.375rem;
+  font-weight: 600; }
 
 .hero-slider-wrapper {
   position: relative;
@@ -10111,14 +10136,17 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/type/a3.jpeg");
+  background-image: url("../images/home/child.png");
   background-repeat: no-repeat;
   background-size: cover;
   filter: blur(5px);
   z-index: 0; }
 
 #story img {
-  position: relative; }
+  position: relative;
+  width: 60%;
+  margin-bottom: 5rem;
+  margin-top: 1.5rem; }
 
 .lb-container {
   background: black; }
@@ -10723,19 +10751,27 @@ ul.social-list li a {
     width: 90%; }
 
 footer {
-  color: white;
-  font-size: 40px;
+  margin-top: 3rem;
+  color: #383737;
+  font-size: 1.25rem;
   padding: 0.5em 10em; }
   @media (max-width: 767px) {
     footer {
       padding: 0.5em 1em; } }
+  footer .center {
+    padding-left: 5rem; }
+    @media (min-width: 1600px) {
+      footer .center {
+        padding-left: 10rem; } }
+  footer #rb-5 {
+    border-right: 5px solid #534CA0;
+    padding-right: 1rem;
+    margin-right: 1rem; }
   footer a {
     color: white; }
     @media (max-width: 991px) {
       footer a {
         font-size: 20px; } }
-  footer i {
-    padding-left: 0.5em; }
   footer p {
     font-size: 0.5rem;
     text-align: justify;
