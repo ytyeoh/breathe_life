@@ -9290,7 +9290,7 @@ body {
 p {
   font-family: "Poppins", sans-serif;
   color: #383737;
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   letter-spacing: 1px; }
   @media (min-width: 1600px) {
     p {
@@ -9699,13 +9699,15 @@ body {
   display: none; }
 
 .text2 li {
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   text-align: left; }
-
+  @media (min-width: 1600px) {
+    .text2 li {
+      font-size: 2.5rem; } }
 .hh:hover .text2 {
   color: white;
-  text-align: center;
-  font-size: 1.1rem;
+  text-align: left;
+  font-size: 2rem;
   padding-top: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -9718,7 +9720,9 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(36, 164, 155, 0.5); }
-
+  @media (min-width: 1600px) {
+    .hh:hover .text2 {
+      font-size: 2.7rem; } }
 .hh:hover .text1 {
   display: none; }
 
@@ -10137,9 +10141,10 @@ body {
   width: 100%;
   height: 100%;
   background-image: url("../images/home/child.png");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(5px);
+  opacity: 0.21;
   z-index: 0; }
 
 #story img {
@@ -10753,11 +10758,12 @@ ul.social-list li a {
 footer {
   margin-top: 3rem;
   color: #383737;
-  font-size: 1.25rem;
-  padding: 0.5em 10em; }
-  @media (max-width: 767px) {
+  font-size: 1.4rem;
+  padding: 0.5em 8em; }
+  @media (min-width: 1600px) {
     footer {
-      padding: 0.5em 1em; } }
+      padding: 0.5em 10em;
+      font-size: 1.25rem; } }
   footer .center {
     padding-left: 5rem; }
     @media (min-width: 1600px) {
@@ -10768,10 +10774,10 @@ footer {
     padding-right: 1rem;
     margin-right: 1rem; }
   footer a {
-    color: white; }
-    @media (max-width: 991px) {
+    font-size: 1.25rem; }
+    @media (min-width: 1600px) {
       footer a {
-        font-size: 20px; } }
+        font-size: 1.25rem; } }
   footer p {
     font-size: 0.5rem;
     text-align: justify;
