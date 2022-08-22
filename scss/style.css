@@ -9400,6 +9400,14 @@ label {
   font-weight: 600;
   border: none; }
 
+.btn-danger:hover {
+  background: #fff;
+  color: #dc3545;
+  border: 3px solid #dc3545;
+  font-weight: bold; }
+  .btn-danger:hover svg path, .btn-danger:hover svg text {
+    fill: #dc3545; }
+
 .btn-50 {
   width: 100%;
   border-radius: 10rem; }
@@ -9477,11 +9485,17 @@ body {
     .px-10 {
       padding-left: 5rem;
       padding-right: 5rem; } }
+.shadow {
+  box-shadow: 3px 3px 10px #534ca0; }
+
 .pt-10 {
   padding-top: 10rem; }
 
 .bg-grey {
   background: #CCD1D1 !important; }
+
+.bg-green {
+  background: #24A49B; }
 
 .bg-black {
   background: black !important; }
@@ -10454,6 +10468,29 @@ img.hover-shadow {
   .contact i {
     color: white;
     font-size: 3rem; }
+  .contact form {
+    padding-top: 20%;
+    padding-bottom: 20%; }
+    @media (min-width: 1400px) {
+      .contact form {
+        padding-left: 6rem;
+        padding-right: 9rem; } }
+    .contact form input, .contact form textarea {
+      border-radius: 16px; }
+    .contact form ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #534CA0;
+      opacity: 1;
+      /* Firefox */
+      padding-left: 1rem; }
+    .contact form :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #534CA0;
+      padding-left: 2rem; }
+    .contact form ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #534CA0;
+      padding-left: 1rem; }
   .contact .title-case p {
     font-size: 0.9rem; }
     @media (max-width: 575px) {
