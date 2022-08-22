@@ -10462,8 +10462,7 @@ img.hover-shadow {
 
 .contact {
   position: relative;
-  padding-top: 180px;
-  margin-bottom: 2em;
+  margin-bottom: 8rem;
   z-index: 1; }
   .contact i {
     color: white;
