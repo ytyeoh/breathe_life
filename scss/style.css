@@ -9316,7 +9316,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700; }
 
 .font-cursive {
-  font-family: "Kaushan Script", cursive; }
+  font-family: "Kaushan Script", sans-cursive; }
 
 .f-100 {
   font-weight: 100 !important; }
@@ -9630,6 +9630,10 @@ body {
     letter-spacing: 2px;
     text-transform: capitalize;
     text-decoration: none; }
+  #main-nav .navbar-nav .nav-item .nav-link:hover {
+    text-decoration-color: white;
+    border-bottom: 2px solid #1A4568;
+    padding-bottom: 3px; }
   #main-nav .navbar-nav .nav-item .text-green {
     color: #24A49B; }
   #main-nav .navbar-nav .nav-item .text-green:hover {
@@ -10262,14 +10266,46 @@ body {
   @media (max-width: 575px) {
     .product1 h3 {
       font-size: 80px; } }
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 #helmet {
-  background: black; }
-  #helmet h3, #helmet h4, #helmet p {
+  background: #F3F1F1; }
+  @media (min-width: 1600px) {
+    #helmet .container {
+      max-width: 1500px; } }
+  @media (min-width: 1400px) {
+    #helmet .container {
+      max-width: 1300px; } }
+  #helmet h3, #helmet p {
     color: black; }
+  #helmet h4 {
+    color: #F9F9F9;
+    font-size: 1.125rem; }
   #helmet h3 {
-    font-size: 60px; }
+    font-size: 2.5rem;
+    color: #1A4568;
+    font-weight: normal; }
   #helmet .card {
-    background: black; }
+    background: #24A49B;
+    min-height: 410px;
+    filter: drop-shadow(5px 8px 6px #90afc4); }
+    @media (min-width: 1600px) {
+      #helmet .card {
+        min-height: 437px; } }
+    @media (max-width: 767px) {
+      #helmet .card {
+        min-height: 0; } }
+    @media (min-width: 1400px) {
+      #helmet .card {
+        min-height: 400px; } }
+    #helmet .card img {
+      padding: 0 30%;
+      min-height: 175px;
+      max-width: 100%; }
   #helmet #line {
     height: 10rem;
     border-left: 2px solid black; }
