@@ -10647,6 +10647,13 @@ ul.social-list li a {
     line-height: 48px;
     color: #0a6446; }
 
+.testimonials .owl-nav {
+  position: absolute;
+  top: 40%;
+  color: #fff;
+  font-size: 5rem;
+  width: 100%; }
+
 #image-100 {
   margin: 0;
   width: 100%; }
@@ -10796,6 +10803,14 @@ ul.social-list li a {
   .apply-btn:hover {
     color: #fff;
     text-decoration: none; }
+
+.info h2 {
+  color: #383737;
+  font-size: 1.6rem; }
+
+.info li {
+  color: #383737;
+  font-size: 1.4rem; }
 
 #btn-back-to-top {
   position: fixed;
