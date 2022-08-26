@@ -9735,7 +9735,7 @@ body {
   padding-right: 0.5rem;
   position: absolute;
   font-weight: bold;
-  bottom: -4px;
+  bottom: 0;
   right: 0;
   left: 0;
   width: 100%;
@@ -9746,7 +9746,7 @@ body {
   display: none; }
 
 .text2 li {
-  font-size: 1.9rem;
+  font-size: 1.75rem;
   text-align: left; }
   @media (min-width: 1600px) {
     .text2 li {
@@ -9754,10 +9754,10 @@ body {
 .hh:hover .text2 {
   color: white;
   text-align: left;
-  font-size: 2rem;
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: block;
   position: absolute;
   top: 0;
@@ -9777,7 +9777,8 @@ body {
   position: absolute;
   bottom: 8px;
   right: 16px;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  font-weight: normal; }
 
 .story h3 {
   font-size: 2.375rem; }
