@@ -10330,6 +10330,9 @@ body {
   font-size: 1.25rem; }
   .donate .nav {
     border-radius: 21px; }
+  .donate h5 {
+    font-size: 1.25rem;
+    color: #1A4568; }
   .donate .nav-item {
     background: white;
     color: black;
@@ -10339,6 +10342,10 @@ body {
   .donate .nav-link.active {
     background: #1A4568;
     border-radius: 21px; }
+
+#flex {
+  display: flex;
+  border-radius: 21px; }
 
 #dealer p {
   margin-bottom: 0.1rem; }
