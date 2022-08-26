@@ -9447,6 +9447,9 @@ body {
 .rounded-1 {
   border-radius: 55px; }
 
+.rounded-2 {
+  border-radius: 21px; }
+
 .hidden {
   display: none; }
 
@@ -9650,8 +9653,6 @@ body {
     padding-bottom: 3px; }
   #main-nav .navbar-nav .nav-item .text-green {
     color: #24A49B; }
-  #main-nav .navbar-nav .nav-item .text-green:hover {
-    text-decoration: underline; }
   #main-nav .navbar-nav .nav-item .active {
     text-decoration-color: white;
     border-bottom: 2px solid #1A4568;
@@ -10326,10 +10327,22 @@ body {
     @media (max-width: 991px) {
       #helmet #line {
         display: none; } }
+.desc h4 {
+  font-size: 2.1rem; }
+
 .donate {
   font-size: 1.25rem; }
   .donate .nav {
     border-radius: 21px; }
+  .donate .p-53 {
+    white-space: normal;
+    padding: 4.5rem 2rem;
+    font-size: 1.5rem; }
+
+@inlcude desktop-xxl {
+  .donate .p-53 {
+    padding: 6rem 2rem;
+    font-size: 2em; } }
   .donate h5 {
     font-size: 1.25rem;
     color: #1A4568; }
@@ -10341,7 +10354,8 @@ body {
       color: black; }
   .donate .nav-link.active {
     background: #1A4568;
-    border-radius: 21px; }
+    border-radius: 21px;
+    color: #F2FBFF; }
 
 #flex {
   display: flex;
