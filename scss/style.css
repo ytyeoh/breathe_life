@@ -10346,9 +10346,9 @@ body {
     /*Aligns horizontally center */ }
   .donate .p-53 {
     white-space: normal;
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
     font-size: 1.5rem;
-    max-height: 15rem; }
+    height: 12rem; }
 
 @inlcude desktop-xxl {
   .donate .p-53 {
