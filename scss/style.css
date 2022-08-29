@@ -9673,6 +9673,9 @@ body {
     @media (max-width: 991px) {
       #main-nav .navbar-nav .hamburger-icon {
         display: none; } }
+.products p {
+  font-size: 1.6rem; }
+
 .products h2 {
   font-size: 1.875rem;
   text-transform: none;
@@ -9746,7 +9749,7 @@ body {
   display: none; }
 
 .text2 li {
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   text-align: left; }
   @media (min-width: 1600px) {
     .text2 li {
