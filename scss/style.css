@@ -10338,10 +10338,17 @@ body {
   font-size: 1.25rem; }
   .donate .nav {
     border-radius: 21px; }
+  .donate .align-mid {
+    display: flex;
+    align-items: center;
+    /*Aligns vertically center */
+    justify-content: center;
+    /*Aligns horizontally center */ }
   .donate .p-53 {
     white-space: normal;
-    padding: 4.5rem 2rem;
-    font-size: 1.5rem; }
+    padding: 6rem 2rem;
+    font-size: 1.5rem;
+    max-height: 15rem; }
 
 @inlcude desktop-xxl {
   .donate .p-53 {
