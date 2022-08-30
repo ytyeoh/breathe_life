@@ -9331,8 +9331,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900 !important; }
 
 .font-3 {
-  font-size: 2.188rem; }
-
+  font-size: 1.8rem; }
+  @media (min-width: 1400px) {
+    .font-3 {
+      font-size: 2.188rem; } }
 .text-blue {
   color: #534CA0; }
 
@@ -9396,7 +9398,6 @@ label {
   background: white;
   color: black;
   border-radius: 3rem;
-  padding: 10px 50px;
   font-weight: 600;
   border: none; }
 
@@ -9475,8 +9476,12 @@ body {
   padding: 10rem; }
 
 .px-6 {
-  padding-left: 5rem;
-  padding-right: 5rem; }
+  padding-left: 3rem;
+  padding-right: 3rem; }
+  @media (min-width: 1400px) {
+    .px-6 {
+      padding-left: 5rem;
+      padding-right: 5rem; } }
   @media (max-width: 575px) {
     .px-6 {
       padding-left: 1rem;
@@ -10356,6 +10361,9 @@ body {
 
 .donate {
   font-size: 1.25rem; }
+  @media (max-width: 575px) {
+    .donate {
+      font-size: 1.15rem; } }
   .donate .nav {
     border-radius: 21px; }
   .donate .align-mid {
