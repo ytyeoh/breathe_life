@@ -9729,7 +9729,12 @@ body {
   color: #fff;
   font-size: 5rem;
   width: 100%; }
-
+  @media (max-width: 991px) {
+    .owl-nav {
+      top: 5%; } }
+  @media (max-width: 575px) {
+    .owl-nav {
+      top: -5%; } }
 .owl-nav .owl-next {
   position: absolute;
   right: 0; }
@@ -10215,8 +10220,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/home/child.jpg");
-  background-image: image-set("child.jpg" 1x, "child-2x.jpg" 2x, "child-3x.jpg" 3x, "child-4x.jpg" 4x);
+  background-image: url("../images/home/child-2x.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10679,10 +10683,13 @@ ul.social-list li a {
     #content-50 p {
       font-size: 1rem; } }
 .desc h2 {
-  font-size: 2.3rem; }
+  font-size: 1.8rem; }
   @media (min-width: 1600px) {
     .desc h2 {
       font-size: 2.813rem; } }
+  @media (min-width: 1400px) {
+    .desc h2 {
+      font-size: 2.3rem; } }
 .company-fun-facts h2 {
   font-size: 60px;
   margin-bottom: 60px;
@@ -10832,7 +10839,10 @@ ul.social-list li a {
   z-index: 55;
   width: 5.188rem;
   height: 5.188rem; }
-
+  @media (max-width: 575px) {
+    #btn-back-to-top {
+      width: 3.575rem;
+      height: 3.575rem; } }
 #btn-donate {
   padding: 1rem;
   position: fixed;
@@ -10858,6 +10868,9 @@ footer {
   color: #383737;
   font-size: 1rem;
   padding: 0.5em 3em; }
+  @media (max-width: 575px) {
+    footer {
+      font-size: 0.8rem; } }
   @media (max-width: 767px) {
     footer {
       padding: 0.5em 1em; } }
@@ -10876,10 +10889,17 @@ footer {
     @media (min-width: 1600px) {
       footer .center {
         padding-left: 10rem; } }
+    @media (max-width: 575px) {
+      footer .center {
+        padding-left: 0; } }
   footer #rb-5 {
     border-right: 5px solid #534CA0;
     padding-right: 1rem;
     margin-right: 1rem; }
+    @media (max-width: 575px) {
+      footer #rb-5 {
+        padding-right: 0.5rem;
+        margin-right: 0.5rem; } }
   footer a {
     font-size: 1.25rem; }
     @media (max-width: 575px) {
