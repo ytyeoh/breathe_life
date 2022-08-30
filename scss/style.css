@@ -10215,7 +10215,8 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/home/child.png");
+  background-image: url("../images/home/child.jpg");
+  background-image: image-set("child.jpg" 1x, "child-2x.jpg" 2x, "child-3x.jpg" 3x, "child-4x.jpg" 4x);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10323,6 +10324,9 @@ body {
     @media (max-width: 767px) {
       #helmet .mx-x8 {
         margin: 0 8.333%; } }
+    @media (max-width: 575px) {
+      #helmet .mx-x8 {
+        margin: 0 4.1666%; } }
   @media (min-width: 1600px) {
     #helmet .container {
       max-width: 1500px; } }
@@ -10346,6 +10350,7 @@ body {
         min-height: 0; } }
     #helmet .card img {
       padding: 0 30%;
+      min-height: 10rem;
       max-width: 100%; }
     #helmet .card .card-body {
       padding: 1.25rem 0; }
