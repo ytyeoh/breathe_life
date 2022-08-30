@@ -10318,6 +10318,11 @@ body {
 
 #helmet {
   background: #F3F1F1; }
+  #helmet .mx-x8 {
+    margin: 0 4.1111%; }
+    @media (max-width: 767px) {
+      #helmet .mx-x8 {
+        margin: 0 8.333%; } }
   @media (min-width: 1600px) {
     #helmet .container {
       max-width: 1500px; } }
@@ -10335,21 +10340,15 @@ body {
     font-weight: normal; }
   #helmet .card {
     background: #24A49B;
-    min-height: 450px;
     filter: drop-shadow(5px 8px 6px #90afc4); }
-    @media (min-width: 1600px) {
-      #helmet .card {
-        min-height: 437px; } }
     @media (max-width: 767px) {
       #helmet .card {
         min-height: 0; } }
-    @media (min-width: 1400px) {
-      #helmet .card {
-        min-height: 400px; } }
     #helmet .card img {
       padding: 0 30%;
-      min-height: 175px;
       max-width: 100%; }
+    #helmet .card .card-body {
+      padding: 1.25rem 0; }
   #helmet #line {
     height: 10rem;
     border-left: 2px solid black; }
@@ -10852,7 +10851,7 @@ ul.social-list li a {
 footer {
   margin-top: 3rem;
   color: #383737;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 0.5em 3em; }
   @media (max-width: 767px) {
     footer {
@@ -10866,7 +10865,7 @@ footer {
       font-size: 1.25rem; } }
   footer .center {
     padding-left: 5rem; }
-    @media (max-width: 767px) {
+    @media (max-width: 1200px) {
       footer .center {
         padding-left: 1rem; } }
     @media (min-width: 1600px) {
