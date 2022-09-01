@@ -9728,24 +9728,26 @@ body {
   color: #000; }
   @media (max-width: 575px) {
     .products h2 {
-      font-size: 1.5rem; } }
+      font-size: 1.1rem; } }
 .products h2 .zzz {
   font-size: 2.5rem;
   text-transform: uppercase;
   color: #24A49B; }
   @media (max-width: 575px) {
     .products h2 .zzz {
-      font-size: 2.2rem; } }
+      font-size: 1.2rem; } }
 .products h2 .bbb {
   font-size: 2.188rem; }
   @media (max-width: 575px) {
     .products h2 .bbb {
-      font-size: 2rem; } }
+      font-size: 1.14rem; } }
 .products span .ccc {
   font-size: 2.813rem;
   text-transform: uppercase;
   color: #24A49B; }
-
+  @media (max-width: 575px) {
+    .products span .ccc {
+      font-size: 1.3rem; } }
 .products .vv {
   width: 100%;
   height: 0;
@@ -10375,7 +10377,20 @@ body {
         display: none; } }
 .desc h4 {
   font-size: 2.1rem; }
-
+  @media (max-width: 575px) {
+    .desc h4 {
+      font-size: 1.5rem; } }
+.desc h2 {
+  font-size: 1.8rem; }
+  @media (max-width: 575px) {
+    .desc h2 {
+      font-size: 1.3rem; } }
+  @media (min-width: 1600px) {
+    .desc h2 {
+      font-size: 2.813rem; } }
+  @media (min-width: 1400px) {
+    .desc h2 {
+      font-size: 2.3rem; } }
 .donate {
   font-size: 0.9rem; }
   @media (max-width: 575px) {
@@ -10656,14 +10671,6 @@ body {
   @media (max-width: 575px) {
     #content-50 p {
       font-size: 1rem; } }
-.desc h2 {
-  font-size: 1.8rem; }
-  @media (min-width: 1600px) {
-    .desc h2 {
-      font-size: 2.813rem; } }
-  @media (min-width: 1400px) {
-    .desc h2 {
-      font-size: 2.3rem; } }
 .company-fun-facts h2 {
   font-size: 60px;
   margin-bottom: 60px;
