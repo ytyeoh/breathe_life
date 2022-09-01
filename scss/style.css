@@ -9429,6 +9429,9 @@ label {
   .btn-danger:hover svg path, .btn-danger:hover svg text {
     fill: #dc3545; }
 
+button:focus {
+  outline: none; }
+
 @media (max-width: 575px) {
   #stupid-donate {
     margin: 0 10%; } }
@@ -9469,6 +9472,11 @@ label {
 body {
   background: #F3F1F1; }
 
+.logo {
+  width: 132px; }
+  @media (max-width: 575px) {
+    .logo {
+      width: 80px; } }
 .rounded-1 {
   border-radius: 55px; }
 
@@ -9810,7 +9818,8 @@ body {
   @media (max-width: 575px) {
     .text1 {
       font-size: 1.2rem;
-      height: 50%; } }
+      height: 50%;
+      padding-top: 1.5rem; } }
   @media (min-width: 1400px) {
     .text1 {
       font-size: 1.75rem; } }
@@ -9868,7 +9877,7 @@ body {
   font-size: 2.375rem; }
   @media (max-width: 575px) {
     .story h3 {
-      font-size: 2rem; } }
+      font-size: 1.5rem; } }
 .hero-slider-wrapper {
   position: relative;
   z-index: 5; }
@@ -10594,7 +10603,7 @@ body {
       margin-bottom: 2em; } }
   @media (max-width: 767px) {
     .contact {
-      padding-top: 70px; } }
+      padding-top: 1rem; } }
   @media (max-width: 575px) {
     .contact {
       margin-bottom: 2em; } }
