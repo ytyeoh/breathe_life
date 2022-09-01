@@ -10343,9 +10343,12 @@ body {
     color: #F9F9F9;
     font-size: 1.125rem; }
   #helmet h3 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #1A4568;
     font-weight: normal; }
+    @media (min-width: 1400px) {
+      #helmet h3 {
+        font-size: 2.5rem; } }
   #helmet .card {
     background: #24A49B;
     filter: drop-shadow(5px 8px 6px #90afc4); }
@@ -10368,10 +10371,18 @@ body {
   font-size: 2.1rem; }
 
 .donate {
-  font-size: 1.25rem; }
+  font-size: 0.9rem; }
   @media (max-width: 575px) {
     .donate {
       font-size: 1.15rem; } }
+  @media (min-width: 1400px) {
+    .donate {
+      font-size: 1.25rem; } }
+  .donate h4 {
+    font-size: 1.1rem; }
+    @media (min-width: 1400px) {
+      .donate h4 {
+        font-size: 1.5rem; } }
   .donate .nav {
     border-radius: 21px; }
   .donate .align-mid {
@@ -10450,12 +10461,16 @@ body {
     color: white;
     font-size: 3rem; }
   .contact .contact-form-ajax {
-    padding-top: 20%;
-    padding-bottom: 20%; }
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 15px;
+    padding-right: 15px; }
     @media (min-width: 1400px) {
       .contact .contact-form-ajax {
         padding-left: 6rem;
-        padding-right: 9rem; } }
+        padding-right: 9rem;
+        padding-top: 20%;
+        padding-bottom: 20%; } }
     .contact .contact-form-ajax input, .contact .contact-form-ajax textarea {
       border-radius: 16px; }
     .contact .contact-form-ajax ::placeholder {
@@ -10635,10 +10650,17 @@ ul.social-list li a {
   color: #fff;
   font-size: 5rem;
   width: 100%; }
-
+  @media (max-width: 575px) {
+    .testimonials .owl-nav {
+      top: 0%; } }
+  @media (max-width: 575px) {
+    .testimonials .owl-nav img {
+      width: 30px; } }
 .teams .bg-green {
   min-height: 24rem; }
-
+  @media (max-width: 575px) {
+    .teams .bg-green {
+      min-height: 15rem; } }
 .teams .text {
   position: absolute;
   top: 30%; }
@@ -10646,28 +10668,43 @@ ul.social-list li a {
     font-size: 3.4rem;
     color: #1A4568;
     margin-bottom: 1.5rem; }
+    @media (max-width: 575px) {
+      .teams .text h2 {
+        font-size: 2.5rem; } }
   .teams .text h3 {
     font-size: 2.8rem;
     color: #F9F9F9;
     font-weight: normal; }
-
+    @media (max-width: 575px) {
+      .teams .text h3 {
+        font-size: 1.8rem; } }
 .teams img {
   width: 30%;
   position: absolute;
   top: -20%; }
-
+  @media (max-width: 575px) {
+    .teams img {
+      top: -10%; } }
 .teams .text-left {
   left: 50%; }
-
+  @media (max-width: 575px) {
+    .teams .text-left {
+      left: 10%; } }
 .teams .img-left img {
   left: 15%; }
-
+  @media (max-width: 575px) {
+    .teams .img-left img {
+      left: 50%; } }
 .teams .text-right {
   right: 50%; }
-
+  @media (max-width: 575px) {
+    .teams .text-right {
+      right: 10%; } }
 .teams .img-right img {
   right: 15%; }
-
+  @media (max-width: 575px) {
+    .teams .img-right img {
+      right: 50%; } }
 #image-100 {
   margin: 0;
   width: 100%; }
