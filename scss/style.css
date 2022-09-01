@@ -10361,6 +10361,9 @@ body {
   #helmet h4 {
     color: #F9F9F9;
     font-size: 1.125rem; }
+    @media (max-width: 575px) {
+      #helmet h4 {
+        font-size: 0.5rem; } }
   #helmet h3 {
     font-size: 1.8rem;
     color: #1A4568;
@@ -10378,6 +10381,12 @@ body {
       padding: 0 30%;
       min-height: 10rem;
       max-width: 100%; }
+      @media (max-width: 575px) {
+        #helmet .card img {
+          padding: 0;
+          margin-left: 25%;
+          min-height: 1rem;
+          max-width: 50%; } }
     #helmet .card .card-body {
       padding: 1.25rem 0; }
   #helmet #line {
