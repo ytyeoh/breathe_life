@@ -10419,7 +10419,7 @@ body {
   font-size: 0.9rem; }
   @media (max-width: 575px) {
     .donate {
-      font-size: 1.15rem; } }
+      font-size: 0.75rem; } }
   @media (min-width: 1400px) {
     .donate {
       font-size: 1.25rem; } }
@@ -10428,6 +10428,9 @@ body {
     @media (min-width: 1400px) {
       .donate h4 {
         font-size: 1.5rem; } }
+    @media (max-width: 575px) {
+      .donate h4 {
+        font-size: 0.8rem; } }
   .donate .nav {
     border-radius: 21px; }
   .donate .align-mid {
@@ -10456,6 +10459,54 @@ body {
     .donate .nav-item a {
       color: black; }
   .donate .nav-link.active {
+    background: #1A4568;
+    border-radius: 21px;
+    color: #F2FBFF; }
+
+.donation {
+  font-size: 0.9rem; }
+  @media (max-width: 575px) {
+    .donation {
+      font-size: 1.3rem; } }
+  @media (min-width: 1400px) {
+    .donation {
+      font-size: 1.25rem; } }
+  .donation h4 {
+    font-size: 1.1rem; }
+    @media (min-width: 1400px) {
+      .donation h4 {
+        font-size: 1.5rem; } }
+    @media (max-width: 575px) {
+      .donation h4 {
+        font-size: 0.8rem; } }
+  .donation .nav {
+    border-radius: 21px; }
+  .donation .align-mid {
+    display: flex;
+    align-items: center;
+    /*Aligns vertically center */
+    justify-content: center;
+    /*Aligns horizontally center */ }
+  .donation .p-53 {
+    white-space: normal;
+    padding: 4rem 2rem;
+    font-size: 1.5rem;
+    height: 12rem; }
+
+@inlcude desktop-xxl {
+  .donation .p-53 {
+    padding: 6rem 2rem;
+    font-size: 2em; } }
+  .donation h5 {
+    font-size: 1.25rem;
+    color: #1A4568; }
+  .donation .nav-item {
+    background: white;
+    color: black;
+    border-radius: 21px; }
+    .donation .nav-item a {
+      color: black; }
+  .donation .nav-link.active {
     background: #1A4568;
     border-radius: 21px;
     color: #F2FBFF; }
