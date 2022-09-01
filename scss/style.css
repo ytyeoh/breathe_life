@@ -9307,7 +9307,7 @@ p {
       font-size: 1.75rem; } }
   @media (max-width: 767px) {
     p {
-      font-size: 1.5rem; } }
+      font-size: 1rem; } }
 h1, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   color: #383737; }
@@ -9374,7 +9374,7 @@ h2 {
       font-size: 3.375rem; } }
   @media (max-width: 767px) {
     h2 {
-      font-size: 1.5rem; } }
+      font-size: 1.2rem; } }
 h3 {
   color: #383737;
   font-size: 1.75rem;
@@ -9385,7 +9385,7 @@ h3 {
   animation-fill-mode: backwards; }
   @media (max-width: 767px) {
     h3 {
-      font-size: 1rem; } }
+      font-size: 1.1rem; } }
 h5 {
   font-size: 1.875rem;
   font-weight: normal;
@@ -9393,7 +9393,9 @@ h5 {
   animation-name: animate-fade;
   animation-delay: 0.9s;
   animation-fill-mode: backwards; }
-
+  @media (max-width: 575px) {
+    h5 {
+      font-size: 1.2rem; } }
 p {
   animation-duration: 1s;
   animation-name: animate-fade;
@@ -9724,15 +9726,21 @@ body {
   font-size: 1.875rem;
   text-transform: none;
   color: #000; }
-
+  @media (max-width: 575px) {
+    .products h2 {
+      font-size: 1.5rem; } }
 .products h2 .zzz {
   font-size: 2.5rem;
   text-transform: uppercase;
   color: #24A49B; }
-
+  @media (max-width: 575px) {
+    .products h2 .zzz {
+      font-size: 2.2rem; } }
 .products h2 .bbb {
   font-size: 2.188rem; }
-
+  @media (max-width: 575px) {
+    .products h2 .bbb {
+      font-size: 2rem; } }
 .products span .ccc {
   font-size: 2.813rem;
   text-transform: uppercase;
@@ -9793,6 +9801,9 @@ body {
   width: 100%;
   height: 40%;
   background-color: rgba(83, 76, 160, 0.6); }
+  @media (max-width: 575px) {
+    .text1 {
+      font-size: 1.2rem; } }
   @media (min-width: 1400px) {
     .text1 {
       font-size: 1.75rem; } }
@@ -9842,7 +9853,9 @@ body {
 
 .story h3 {
   font-size: 2.375rem; }
-
+  @media (max-width: 575px) {
+    .story h3 {
+      font-size: 2rem; } }
 .hero-slider-wrapper {
   position: relative;
   z-index: 5; }
@@ -10222,7 +10235,10 @@ body {
   width: 60%;
   margin-bottom: 5rem;
   margin-top: 1.5rem; }
-
+  @media (max-width: 575px) {
+    #story img {
+      width: 80%;
+      margin-bottom: 3rem; } }
 .lb-container {
   background: black; }
 
