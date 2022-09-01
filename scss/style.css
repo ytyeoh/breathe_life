@@ -9364,7 +9364,11 @@ h2 {
   font-size: 2.5rem;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
-  color: #534CA0; }
+  color: #534CA0;
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards; }
   @media (min-width: 1600px) {
     h2 {
       font-size: 3.375rem; } }
@@ -9374,13 +9378,27 @@ h2 {
 h3 {
   color: #383737;
   font-size: 1.75rem;
-  font-weight: 900; }
+  font-weight: 900;
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards; }
   @media (max-width: 767px) {
     h3 {
       font-size: 1rem; } }
 h5 {
   font-size: 1.875rem;
-  font-weight: normal; }
+  font-weight: normal;
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 0.9s;
+  animation-fill-mode: backwards; }
+
+p {
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 1.2s;
+  animation-fill-mode: backwards; }
 
 label {
   font-size: 15px;
@@ -9633,6 +9651,14 @@ body {
     transform: scale(1);
     -webkit-transform: scale(1); } }
 
+@keyframes animate-fade {
+  0% {
+    transform: scale(0.5, 0.5);
+    opacity: 0; }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1; } }
+
 .nav-section {
   background: transparent;
   padding: 20px 0; }
@@ -9669,6 +9695,7 @@ body {
   #main-nav .navbar-nav .nav-item .text-green {
     color: #24A49B; }
   #main-nav .navbar-nav .nav-item .active {
+    display: inline-block;
     text-decoration-color: white;
     border-bottom: 2px solid #1A4568;
     padding-bottom: 3px; }
@@ -9921,43 +9948,6 @@ body {
   .hero-slider-wrapper .slick-prev {
     right: 6%;
     bottom: 5%; }
-
-.content_2 .hero-btn {
-  padding: 25px 50px;
-  font-weight: 600;
-  color: #fff;
-  border-radius: 3rem;
-  border: none;
-  letter-spacing: 2px;
-  background: black; }
-
-@media (max-width: 991px) {
-  .content_2 {
-    width: 50%; } }
-
-@media (max-width: 575px) {
-  .content_2 {
-    width: 50%; } }
-
-.scroll {
-  height: 70px;
-  overflow: hidden; }
-  .scroll h6 {
-    transform: rotate(-90deg);
-    letter-spacing: 2px;
-    position: relative;
-    font-size: 13px;
-    margin-top: 20px;
-    font-family: "Poppins", sans-serif; }
-    .scroll h6::before {
-      position: absolute;
-      content: '';
-      width: 30px;
-      height: 1px;
-      background: #9ea0c9;
-      left: 48%;
-      top: -4px;
-      overflow: hidden; }
 
 .mission {
   position: relative; }
@@ -10575,75 +10565,6 @@ body {
           font-size: 16px;
           line-height: 25px;
           max-width: 100%; } }
-.map-div {
-  position: relative; }
-  .map-div #map {
-    height: 683px; }
-    @media (max-width: 991px) {
-      .map-div #map {
-        height: 400px; } }
-  .map-div .office {
-    position: absolute;
-    top: 0;
-    transform: translate(180px, -90px); }
-    @media (max-width: 991px) {
-      .map-div .office {
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -90px); } }
-    @media (max-width: 575px) {
-      .map-div .office {
-        display: none; } }
-    .map-div .office .contents {
-      max-width: 690px;
-      position: relative; }
-      @media (max-width: 991px) {
-        .map-div .office .contents {
-          width: 500px;
-          margin-top: 30px; } }
-      .map-div .office .contents img {
-        width: 100%; }
-      .map-div .office .contents .address {
-        position: absolute;
-        bottom: 0;
-        padding: 70px 50px; }
-        .map-div .office .contents .address h2 {
-          font-size: 30px;
-          line-height: 35px;
-          margin-bottom: 30px; }
-        .map-div .office .contents .address ul.social-list li a {
-          height: 50px;
-          width: 50px;
-          margin-right: 25px;
-          display: block;
-          text-align: center;
-          border-radius: 100%;
-          border: 1px solid #9bacbd; }
-          .map-div .office .contents .address ul.social-list li a i {
-            line-height: 48px;
-            color: #fff; }
-        .map-div .office .contents .address .contact-btn {
-          border: 1px solid #fff;
-          color: #fff;
-          padding: 15px 30px;
-          font-size: 18px;
-          letter-spacing: 2px;
-          margin-top: 20px;
-          display: inline-block; }
-          .map-div .office .contents .address .contact-btn:hover {
-            text-decoration: none; }
-
-ul.social-list li a {
-  height: 50px;
-  width: 50px;
-  display: block;
-  text-align: center;
-  border-radius: 100%;
-  border: 1px solid #0a6446; }
-  ul.social-list li a i {
-    line-height: 48px;
-    color: #0a6446; }
-
 .testimonials .owl-nav {
   position: absolute;
   top: 40%;
@@ -10880,6 +10801,14 @@ ul.social-list li a {
     #btn-back-to-top {
       width: 3.575rem;
       height: 3.575rem; } }
+@-webkit-keyframes run {
+  0% {
+    left: 0; }
+  50% {
+    left: 50%; }
+  100% {
+    left: 80%; } }
+
 #btn-donate {
   padding: 1rem;
   position: fixed;
@@ -10887,11 +10816,15 @@ ul.social-list li a {
   right: 20px;
   width: 6.875rem;
   height: 6.875rem;
-  z-index: 55; }
+  z-index: 55;
+  -webkit-animation: linear;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 3s; }
   @media (max-width: 575px) {
     #btn-donate {
       width: 3.575rem;
-      height: 3.575rem; } }
+      height: 3.575rem;
+      -webkit-animation-duration: 2s; } }
   @media (min-width: 1400px) {
     #btn-donate {
       bottom: 30%; } }
