@@ -9429,6 +9429,10 @@ label {
   .btn-danger:hover svg path, .btn-danger:hover svg text {
     fill: #dc3545; }
 
+@media (max-width: 575px) {
+  #stupid-donate {
+    margin: 0 10%; } }
+
 .btn-50 {
   width: 100%;
   border-radius: 10rem; }
@@ -9805,7 +9809,8 @@ body {
   background-color: rgba(83, 76, 160, 0.6); }
   @media (max-width: 575px) {
     .text1 {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem;
+      height: 50%; } }
   @media (min-width: 1400px) {
     .text1 {
       font-size: 1.75rem; } }
@@ -9821,6 +9826,9 @@ body {
   @media (min-width: 1600px) {
     .text2 li {
       font-size: 2.5rem; } }
+  @media (max-width: 575px) {
+    .text2 li {
+      font-size: 1.3rem; } }
 .hh:hover .text2 {
   color: white;
   text-align: left;
@@ -9843,6 +9851,9 @@ body {
   @media (min-width: 1600px) {
     .hh:hover .text2 {
       font-size: 2.7rem; } }
+  @media (max-width: 575px) {
+    .hh:hover .text2 {
+      font-size: 1.4rem; } }
 .hh:hover .text1 {
   display: none; }
 
@@ -10379,18 +10390,22 @@ body {
   font-size: 2.1rem; }
   @media (max-width: 575px) {
     .desc h4 {
-      font-size: 1.5rem; } }
+      font-size: 1.2rem; } }
 .desc h2 {
   font-size: 1.8rem; }
   @media (max-width: 575px) {
     .desc h2 {
-      font-size: 1.3rem; } }
+      font-size: 0.7rem; } }
   @media (min-width: 1600px) {
     .desc h2 {
       font-size: 2.813rem; } }
   @media (min-width: 1400px) {
     .desc h2 {
       font-size: 2.3rem; } }
+@media (max-width: 575px) {
+  .desc p {
+    font-size: 0.7rem; } }
+
 .donate {
   font-size: 0.9rem; }
   @media (max-width: 575px) {
