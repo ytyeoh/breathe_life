@@ -10921,7 +10921,11 @@ body {
   right: 20px;
   width: 6.875rem;
   height: 6.875rem;
-  z-index: 55; }
+  z-index: 55;
+  animation-duration: 2s;
+  animation-name: animate-fade;
+  animation-delay: 2s;
+  animation-fill-mode: backwards; }
   @media (max-width: 575px) {
     #btn-donate {
       width: 3.575rem;
