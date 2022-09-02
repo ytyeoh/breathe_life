@@ -9655,52 +9655,71 @@ body {
   padding: 0;
   margin-top: -10px; }
 
-#main-nav .navbar-nav {
-  align-self: center;
-  font-family: "Lato", sans-serif; }
-  @media (max-width: 991px) {
-    #main-nav .navbar-nav {
-      text-align: center; } }
-  #main-nav .navbar-nav .nav-item .nav-link {
-    color: #1A4568;
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    text-decoration: none; }
-    @media (min-width: 1400px) {
-      #main-nav .navbar-nav .nav-item .nav-link {
-        font-size: 1.45rem; } }
-    @media (min-width: 1600px) {
-      #main-nav .navbar-nav .nav-item .nav-link {
-        font-size: 1.688rem; } }
-  #main-nav .navbar-nav .nav-item .nav-link:hover {
-    text-decoration-color: white;
-    border-bottom: 2px solid #1A4568;
-    padding-bottom: 3px; }
-  #main-nav .navbar-nav .nav-item .text-green {
-    color: #24A49B; }
-  #main-nav .navbar-nav .nav-item .active {
-    display: inline-block;
-    text-decoration-color: white;
-    border-bottom: 2px solid #1A4568;
-    padding-bottom: 3px; }
-  #main-nav .navbar-nav .music-icon {
-    padding-left: 55px;
-    padding-right: 25px; }
-    #main-nav .navbar-nav .music-icon a {
-      vertical-align: middle;
-      align-self: center; }
+#main-nav {
+  z-index: 1000; }
+  #main-nav .navbar-nav {
+    align-self: center;
+    font-family: "Lato", sans-serif; }
     @media (max-width: 991px) {
-      #main-nav .navbar-nav .music-icon {
-        display: none; } }
-  #main-nav .navbar-nav .hamburger-icon {
-    padding-left: 25px; }
-    #main-nav .navbar-nav .hamburger-icon a {
-      vertical-align: middle; }
-    @media (max-width: 991px) {
-      #main-nav .navbar-nav .hamburger-icon {
-        display: none; } }
+      #main-nav .navbar-nav {
+        text-align: center; } }
+    #main-nav .navbar-nav .nav-item .nav-link {
+      color: #1A4568;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      text-decoration: none; }
+      @media (min-width: 1400px) {
+        #main-nav .navbar-nav .nav-item .nav-link {
+          font-size: 1.45rem; } }
+      @media (min-width: 1600px) {
+        #main-nav .navbar-nav .nav-item .nav-link {
+          font-size: 1.688rem; } }
+    #main-nav .navbar-nav .nav-item .nav-link:hover {
+      text-decoration-color: white;
+      border-bottom: 2px solid #1A4568;
+      padding-bottom: 3px; }
+    #main-nav .navbar-nav .nav-item .text-green {
+      color: #24A49B; }
+    #main-nav .navbar-nav .nav-item .active {
+      display: inline-block;
+      text-decoration-color: white;
+      border-bottom: 2px solid #1A4568;
+      padding-bottom: 3px; }
+    #main-nav .navbar-nav .nav-item .active.white-text {
+      color: #EE2849;
+      border-bottom: 2px solid #EE2849; }
+      @media (max-width: 575px) {
+        #main-nav .navbar-nav .nav-item .active.white-text {
+          color: #1A4568;
+          border-bottom: 2px solid #1A4568; } }
+    #main-nav .navbar-nav .nav-item .white-text {
+      color: white; }
+      @media (max-width: 575px) {
+        #main-nav .navbar-nav .nav-item .white-text {
+          color: #1A4568; } }
+    #main-nav .navbar-nav .nav-item .white-text:hover {
+      border-bottom: 2px solid white; }
+      @media (max-width: 575px) {
+        #main-nav .navbar-nav .nav-item .white-text:hover {
+          border-bottom: 2px solid #1A4568; } }
+    #main-nav .navbar-nav .music-icon {
+      padding-left: 55px;
+      padding-right: 25px; }
+      #main-nav .navbar-nav .music-icon a {
+        vertical-align: middle;
+        align-self: center; }
+      @media (max-width: 991px) {
+        #main-nav .navbar-nav .music-icon {
+          display: none; } }
+    #main-nav .navbar-nav .hamburger-icon {
+      padding-left: 25px; }
+      #main-nav .navbar-nav .hamburger-icon a {
+        vertical-align: middle; }
+      @media (max-width: 991px) {
+        #main-nav .navbar-nav .hamburger-icon {
+          display: none; } }
 .products p {
   font-size: 1rem; }
   @media (min-width: 1400px) {
@@ -9849,6 +9868,14 @@ body {
   @media (max-width: 575px) {
     .story h3 {
       font-size: 1.5rem; } }
+#fff {
+  margin-top: -11%; }
+  @media (max-width: 1200px) {
+    #fff {
+      margin-top: 0; } }
+  @media (max-width: 1200px) {
+    #fff {
+      margin-top: 0; } }
 .hero-slider-wrapper {
   position: relative;
   z-index: 5; }

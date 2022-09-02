@@ -565,5 +565,11 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     })
   }
   sendContact()
-
+  function moveUp(){
+    if (screen.width> 768 ){
+      var clientHeight = document.getElementById('nav').clientHeight;
+      document.getElementById('fff').style.marginTop = '-'+clientHeight+'px';
+    }
+  }
+  moveUp()
 })(jQuery);
