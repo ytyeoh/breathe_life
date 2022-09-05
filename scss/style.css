@@ -9264,6 +9264,16 @@ li.fancybox-thumbs-loading {
   display: none; }
 
 /*=== MEDIA QUERY ===*/
+/* kaushan-script-regular - latin */
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/kaushan-script-v14-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/kaushan-script-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/kaushan-script-v14-latin-regular.woff2") format("woff2"), url("../fonts/kaushan-script-v14-latin-regular.woff") format("woff"), url("../fonts/kaushan-script-v14-latin-regular.ttf") format("truetype"), url("../fonts/kaushan-script-v14-latin-regular.svg#KaushanScript") format("svg");
+  /* Legacy iOS */ }
+
 body {
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
