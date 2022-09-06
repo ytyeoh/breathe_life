@@ -9414,6 +9414,16 @@ label {
 button:focus {
   outline: none; }
 
+.btn-green-outline {
+  background-color: transparent;
+  border: 1px solid #24A49B;
+  color: #24A49B; }
+
+.btn-red-outline {
+  background-color: transparent;
+  color: #EE2849;
+  border: 1px solid #EE2849; }
+
 @media (max-width: 575px) {
   #stupid-donate {
     margin: 0 10%; } }
@@ -9661,6 +9671,13 @@ body {
   .nav-section .navbar {
     padding: 0 20px; }
 
+.red-border {
+  border: 2px solid #EE2849; }
+
+.red-border:hover {
+  border: 2px solid white;
+  color: white; }
+
 .navbar-brand {
   padding: 0;
   margin-top: -10px; }
@@ -9673,6 +9690,9 @@ body {
     @media (max-width: 991px) {
       #main-nav .navbar-nav {
         text-align: center; } }
+    #main-nav .navbar-nav .give-active {
+      color: white;
+      background-color: red; }
     #main-nav .navbar-nav .nav-item .nav-link {
       color: #1A4568;
       font-size: 1rem;
@@ -10359,6 +10379,10 @@ body {
 
 #helmet {
   background: #F3F1F1; }
+  #helmet .my-row :last-child.noborder {
+    border: 0; }
+  #helmet .border-right {
+    border-right: 1px solid #EE2849; }
   #helmet .mx-x8 {
     margin: 0 4.1111%; }
     @media (max-width: 767px) {
@@ -10373,7 +10397,7 @@ body {
   @media (min-width: 1400px) {
     #helmet .container {
       max-width: 1300px; } }
-  #helmet h3, #helmet p {
+  #helmet p {
     color: black; }
   #helmet h4 {
     color: #F9F9F9;
@@ -10383,7 +10407,6 @@ body {
         font-size: 0.5rem; } }
   #helmet h3 {
     font-size: 1.8rem;
-    color: #1A4568;
     font-weight: normal; }
     @media (min-width: 1400px) {
       #helmet h3 {
