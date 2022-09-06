@@ -541,6 +541,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     $('#mail-ss').on('click', function (e) {
       $('#nn').html($("#a").val());
               $('#nn2').html($("textarea#c").val());
+              $('#contactus').modal('hide');
              $('#myModal').modal();
     
         $.ajax({
@@ -566,7 +567,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
   }
   sendContact()
   function moveUp(){
-    if (screen.width> 768 ){
+    if (screen.width > 768 ){
       var clientHeight = document.getElementById('nav').clientHeight;
       document.getElementById('fff').style.marginTop = '-'+clientHeight+'px';
     }

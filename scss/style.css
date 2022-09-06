@@ -9403,6 +9403,20 @@ label {
   font-weight: 600;
   border: none; }
 
+.img-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center; }
+
 .btn-danger:hover {
   background: #fff;
   color: #dc3545;
@@ -9419,10 +9433,18 @@ button:focus {
   border: 1px solid #24A49B;
   color: #24A49B; }
 
+.btn-green-outline:hover {
+  color: #EE2849;
+  border: 1px solid #EE2849; }
+
 .btn-red-outline {
   background-color: transparent;
   color: #EE2849;
   border: 1px solid #EE2849; }
+
+.btn-red-outline:hover {
+  color: #24A49B;
+  border: 1px solid #24A49B; }
 
 @media (max-width: 575px) {
   #stupid-donate {
@@ -9463,6 +9485,11 @@ button:focus {
       font-size: 1.875rem; } }
 body {
   background: #F3F1F1; }
+
+.btm-0 {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 
 .logo {
   width: 132px; }
@@ -9642,6 +9669,10 @@ body {
 .spinner .double-bounce2 {
   -webkit-animation-delay: -1.0s;
   animation-delay: -1.0s; }
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 80%; } }
 
 @-webkit-keyframes sk-bounce {
   0%, 100% {
@@ -10140,8 +10171,6 @@ body {
 .vision {
   overflow: hidden;
   background: white; }
-  .vision a:hover {
-    color: white; }
   .vision .card {
     background: #000;
     border: 1px solid #707070;
