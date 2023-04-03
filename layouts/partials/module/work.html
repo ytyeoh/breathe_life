@@ -1,0 +1,35 @@
+{{ with .brand }}
+<div id="work" class="section padding-bottom-0 wf-section">
+	<div class="container">
+		<div class="row work margin-120">
+			<div class="col _4-24">
+				<div class="text-micro-1 text-color-dark">Award-winning <br>creative studio</div>
+			</div>
+			<div class="col _18-24"><h2 class="text-display-3">We make brands beautiful, websites powerful and content captivating. A purpose-driven studio daring to be different.</h2></div>
+		</div>
+		<div class="row work">
+			<div class="col _4-24 hide-tablet"></div>
+			<div class="col _18-24">
+				<div class="work-wrap">
+					
+			      		{{ range $index, $element := . }}
+
+							<a href="https://www.shinajii.com/" target="_blank" class="work-item w-inline-block">
+							<div class="work-number" style="background-color: rgb(23, 23, 23); border-color: rgb(44, 44, 44); color: rgb(235, 242, 242);">
+								<div>0{{ add $index 1 }}</div>
+							</div>
+							<div class="col">
+								<div class="text-body-1 text-color-dark">{{ .title }}</div>
+							</div>
+							<img src="svg/634c5dba90db011e8761db3b_work-arrow.svg" loading="lazy" id="w-node-d301c466-ace1-02b5-865b-2d0f43fd9915-91a81c29" alt="" class="work-icon" style="opacity: 0; transform: translate3d(-24px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+							<div id="w-node-_6446ee06-fb12-e33f-c43b-11ba60b5adf7-91a81c29" class="work-hover" style="opacity: 0;">
+								<img src="/img/{{ $element.image }}" loading="lazy" alt="" class="image">
+							</div>
+							</a>
+						{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{ end }}
