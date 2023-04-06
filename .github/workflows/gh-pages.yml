@@ -24,13 +24,10 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy the site
-        run: echo demo.breathelife.org.my > ./public/CNAME
-          
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          cname: demo.breathelife.org.my
