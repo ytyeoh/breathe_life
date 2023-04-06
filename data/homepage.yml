@@ -2,14 +2,12 @@
 videos:
   enable: true
   videos:
-    - video: "PxUnHgw0fgk"
-      video_thumb: "images/home/video.jpeg"
-      text: 'video'
-      text_2: 'education'
     - video: "7lYwaQf9ahU"
       video_thumb: "images/home/video.jpeg"
-      text: 'video2'
-      text_2: 'education2'
+      text: 'Overview'
+    - video: "PxUnHgw0fgk"
+      video_thumb: "images/home/video.jpeg"
+      text: 'Education'
 
 banner:
   slide:
