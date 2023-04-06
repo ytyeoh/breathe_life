@@ -43,6 +43,16 @@
 		    {{ end }}
 		</div>
       </div>
+      
+
+
+      {{ if site.Data.homepage.videos.enable }}
+      	{{ with site.Data.homepage.videos }}
+		  {{ partial "module/videos.html" (dict "videos" .videos ) }}
+	    {{ end }}
+	  {{ end }}
+
+
       {{ partial "module/right_image.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title_2 "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
       
 

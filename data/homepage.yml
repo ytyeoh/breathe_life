@@ -3,10 +3,13 @@ videos:
   enable: true
   videos:
     - video: "PxUnHgw0fgk"
-      # video: "7lYwaQf9ahU"
       video_thumb: "images/home/video.jpeg"
-      image_2 : "images/helmet/a2.png"
       text: 'video'
+      text_2: 'education'
+    - video: "7lYwaQf9ahU"
+      video_thumb: "images/home/video.jpeg"
+      text: 'video2'
+      text_2: 'education2'
 
 banner:
   slide:

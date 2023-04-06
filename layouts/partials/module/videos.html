@@ -1,0 +1,22 @@
+<div class="col-12 p-0 mx-5">
+	<div class="row">
+	    <div class="row__inner">
+	    	{{range .videos}}
+	    	<div type="button" class=" tile " data-toggle="modal" data-target="#{{.video}}">
+	      
+	        <div class="tile__media">
+	        	{{ partial "image.html" (dict "image" .video_thumb  "class" "tile__img") }}
+	        </div>
+	        <div class="tile__details">
+	          <div class="tile__title">
+	            {{ .text }}
+	          </div>
+	          <div class="tile__title2">
+	            {{ .text_2 }}
+	          </div>
+	        </div>
+	      </div>
+	      {{ end }}
+	    </div>
+	</div>
+</div>
