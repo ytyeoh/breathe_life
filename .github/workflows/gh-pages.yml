@@ -25,9 +25,8 @@ jobs:
         run: hugo --minify
 
       - name: Deploy the site
-        uses: benmatselby/hugo-deploy-gh-pages@main
-        env:
-          CNAME: benmatselby.github.io
+        run: |
+          echo benmatselby.github.io        > CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
