@@ -20,7 +20,7 @@
 			    		{{ else }}
 				    		{{ partial "full_width_image.html" (dict "image" .image ) }}
 			    		{{ end }}
-			    		{{ if site.Data.homepage.videos.enable }}
+			    		{{ if eq site.Data.homepage.videos.enable false }}
 							{{ with site.Data.homepage.videos }}
 								{{range .videos}}
 								<div class="col pt-lg-5 pt-4">
