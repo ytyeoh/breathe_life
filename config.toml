@@ -35,6 +35,12 @@ url = "testimonials"
 weight = 4
 
 [[menu.main]]
+name = "blogs"
+pre = ""
+url = "blogs"
+weight = 5
+
+[[menu.main]]
 name = "Contact us"
 pre = ""
 url = "contact"
