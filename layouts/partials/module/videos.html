@@ -1,9 +1,11 @@
-<div class="col-12 p-0 bg-black px-5">
+<div class="col-12 p-0 bg-black px-5" id="video">
+	<h3>Videos</h3>
 	<div class="rows px-5">
 	    <div class="row__inner">
 	    	{{range .videos}}
+
 	    	<div type="button" class=" tile " data-toggle="modal" data-target="#{{.video}}">
-	      
+	      	<h4 style="color:white;">{{ .text }}</h4>
 	        <div class="tile__media">
 	        	{{ partial "image.html" (dict "image" .video_thumb  "class" "tile__img") }}
 	        </div>

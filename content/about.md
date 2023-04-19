@@ -66,17 +66,17 @@ teams:
     pose : "Midwife/Doula"
     img : 'images/teams/3.png'
     position : 'left'
-  - name : "Staci"
-    pose : "Trainee Doula/<br>Team Builder"
-    img : 'images/teams/4.png'
-    position : 'right'
+  # - name : "Staci"
+  #   pose : "Trainee Doula/<br>Team Builder"
+  #   img : 'images/teams/4.png'
+  #   position : 'right'
   - name : "Dee"
     pose : "Translator/<br>Assistant Doula"
     img : 'images/teams/5.png'
-    position : 'left'
+    position : 'right'
   - name : "Sadia"
     pose : "Translator/<br>Assistant"
     img : 'images/teams/6.png'
-    position : 'right'
+    position : 'left'
 
 ---
