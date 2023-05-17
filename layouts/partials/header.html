@@ -43,7 +43,7 @@
               <li>
               	{{ $active :=  "" }}
 	        	{{ $active = or $active (and (eq site.Params.menu "GIVE") (eq .Title "give")) }}
-              	<a class="nav-link red-border page-scroll text-red btn px-5 f-700 {{ if $active }}give-active{{ end }}" href="{{ site.Params.menu_url | relLangURL }}">{{site.Params.menu}}</a>
+              	<a class="nav-link red-border page-scroll text-red btn px-5 f-900 {{ if $active }}give-active{{ end }}" href="{{ site.Params.menu_url | relLangURL }}">{{site.Params.menu}}</a>
               </li>
             </ul>
           </div>
