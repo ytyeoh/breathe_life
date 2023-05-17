@@ -23,9 +23,9 @@ one:
   - amount: "$ 500"
     url: "https://donate.stripe.com/14k8zY8Em3UZavS14n"
     info: "single set full birth cost"
-  - amount: "Any Amounts"
+  - amount: "Any Amount"
     url: "https://donate.stripe.com/7sIdUiaMu4Z333q4gA"
-    info: "Need put some text"
+    info: ""
 monthly:
   # - amount: "USD 20"
   #   url: "https://buy.stripe.com/7sI9E25sabnrfQc28i"
@@ -39,6 +39,6 @@ monthly:
     url: "https://buy.stripe.com/eVag2q9Iq2QVeM87sS"
   - amount: "$ 500"
     url: "https://buy.stripe.com/8wM8zY7Ai2QVcE0dR3"
-  - amount: "Any Amounts"
+  - amount: "Any Amount"
     url: "https://buy.stripe.com/00g5nM6we1MR33q5kL"
 ---
