@@ -86,7 +86,7 @@ mission:
   enable : true
   title : "Providing Education"
   subtitle: 'Imagine...'
-  content : "These babies growing up and not having access to any education. All you want, is for them to have what you never did; the opportunity an education provides, to change their future"
+  content : "These babies growing up and not having access to any education. All you want, is for them to have what you never did; the opportunity an education provides, to change their future."
   image : "images/home/edu1.png"
   image_text: "Partner with Equal Start to provide education for Children"
   button:
