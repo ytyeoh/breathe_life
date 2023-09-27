@@ -99,15 +99,15 @@ title = 'Copyright © BREATHE LIFE 202201014862 (1460559-H)<br>Website managed b
 [[params.social]]
 title = "facebook"
 icon = "fa-facebook" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
-link = "#"
+link = "https://www.facebook.com/breathelifemalaysia"
 
 [[params.social]]
 title = "instagram"
 icon = "fa-instagram" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
-link = "#"
+link = "https://www.instagram.com/breathelifemalaysia/"
 
-[[params.social]]
-title = "twitter"
-icon = "fa-twitter" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
-link = "#"
+# [[params.social]]
+# title = "twitter"
+# icon = "fa-twitter" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+# link = "#"
 
