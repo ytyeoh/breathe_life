@@ -12,29 +12,29 @@ videos:
 banner:
   slide:
     - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
+      desc1 : 'Sponsor  a  <b>child</b>'
+      desc2 : 'giving them a brighter future'
       image : 'images/slide/a1.png'
       
     - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
+      desc1 : 'Sponsor  a  <b>child</b>'
+      desc2 : 'giving them a brighter future'
       image : 'images/slide/a2.png'
     - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
+      desc1 : 'Sponsor  a  <b>child</b>'
+      desc2 : 'giving them a brighter future'
       image : 'images/slide/a3.png'
     - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
+      desc1 : 'Sponsor  a  <b>child</b>'
+      desc2 : 'giving them a brighter future'
       image : 'images/slide/a4.png'
     - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
+      desc1 : 'Sponsor  a  <b>child</b>'
+      desc2 : 'giving them a brighter future'
       image : 'images/slide/a5.png'
     - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
+      desc1 : 'Sponsor  a  <b>child</b>'
+      desc2 : 'giving them a brighter future'
       image : 'images/slide/a6.png'
     # - title : 'You can make a difference!'
     #   desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
@@ -136,7 +136,7 @@ vision:
 product:
   enable : true
   section : "Products"
-  title : "Being a <zzz class='zzz'>refugee</zzz> is hard <br><span class='bbb'>Being a <span class='ccc'>birthing refugee</span> is even harder!</span>"
+  title : "Being a <zzz class='zzz'>refugee</zzz> is hard <br><span class='bbb'><span class='ccc'>Birthing and raising children </span> is harder</span>"
   subtitle: 'Imagine...'
   content : "Malaysian law <b>does not allow</b> for <b>home births</b> and thus medical expenses are beyond the means of these families. Together with <b>financial assistance</b>, we <b>advocate</b> and <b>defend</b> them when they are <b>most vulnerable</b>. There is a desperate need for families to be assisted as unemployment is high and  many have been laid off due to the Covid crisis. "
   image : "images/hero-image/7.png"

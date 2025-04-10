@@ -4,3 +4,11 @@ node_modules/
 package-lock.json
 .hugo_build.lock
 public/*
+!public/cancel.html
+!public/checkout.html
+!public/client.js
+!public/create-checkout-session.php
+!public/create-portal-session.php
+!public/style.css
+!public/success.html
+!public/webhooks.php

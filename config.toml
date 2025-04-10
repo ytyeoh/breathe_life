@@ -3,7 +3,7 @@ baseURL = "/"
 title = "Breathe Life"
 theme = "omega"
 # google analytics
-googleAnalytics = "" # example : UA-123-45
+# googleAnalytics = "" # example : UA-123-45
 [markup.goldmark.renderer]
 unsafe= true
 

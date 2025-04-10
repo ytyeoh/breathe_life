@@ -156,7 +156,9 @@
 }
 .story{
   h3{
-    font-size: 2.375rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: blue;
     @include mobile{
       font-size: 1.5rem;
     }
@@ -349,3 +351,9 @@
 }
 
 
+.h15{
+   text-transform: uppercase;
+   font-weight: bold;
+   color: blue;
+   font-size: 2.8rem;
+}
