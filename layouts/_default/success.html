@@ -1,0 +1,26 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/style.css">
+<script src="/client.js" defer></script>
+{{ with .Params }}
+<section class="donate">
+  <div class="container-fluid d-flex justify-content-center">
+    <div class="row success ">
+      <div class=" col-12 col-12  py-4">
+        <div class="product Box-root mb-3">
+			      <div class="description Box-root">
+			      	<h1>Thanks, {{.name}}!</h1>
+			        <h3>For helping out children</h3>
+			      </div>
+		    </div>
+		    <form action="/create-portal-session.php" method="POST">
+		      <input type="hidden" id="session-id" name="session_id" value="" />
+		      <button id="checkout-and-portal-button" type="submit">Manage your billing information</button>
+		    </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+

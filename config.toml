@@ -53,7 +53,7 @@ weight = 6
 logo = "images/logo.svg"
 logo_width = ""
 menu = "GIVE"
-menu_url = "donation"
+menu_url = "checkout"
 
 # Meta data
 description = "breathe life"

@@ -10,5 +10,5 @@ public/*
 !public/create-checkout-session.php
 !public/create-portal-session.php
 !public/style.css
-!public/success.html
+!public/success.php
 !public/webhooks.php
