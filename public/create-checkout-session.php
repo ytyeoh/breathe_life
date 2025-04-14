@@ -7,8 +7,9 @@ require_once '../secrets.php';
 
 header('Content-Type: application/json');
 
-$YOUR_DOMAIN = 'http://localhost:4242';
-echo "<pre>";print_r($_POST);die();
+// $YOUR_DOMAIN = 'http://localhost:4242';
+$YOUR_DOMAIN = 'https://breathelife.org.my';
+// echo "<pre>";print_r($_POST);die();
 try {
   $prices = \Stripe\Price::all([
     // retrieve lookup_key from form data POST body
