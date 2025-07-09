@@ -12,4 +12,4 @@ public/*
 !public/style.css
 !public/success.php
 !public/webhooks.php
-secret.php
+secrets.php
