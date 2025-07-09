@@ -7,8 +7,17 @@ require_once '../secrets.php';
 
 header('Content-Type: application/json');
 
-// $YOUR_DOMAIN = 'http://localhost:4242';
-$YOUR_DOMAIN = 'https://breathelife.org.my';
+// $stripe = new \Stripe\StripeClient($stripeSecretKey);
+// $aa = $stripe->prices->update(
+//   'price_1RDzLEDWaXYhAlzCiFzELCNW',
+//   ['lookup_key' => 'annualy']
+// );
+
+// $bb = $stripe->prices->all(['limit' => 3]);
+
+// echo "<pre>";print_r($bb);die();
+$YOUR_DOMAIN = 'http:///localhost:4242';
+// $YOUR_DOMAIN = 'https://breathelife.org.my';
 // echo "<pre>";print_r($_POST);die();
 try {
   $prices = \Stripe\Price::all([
@@ -16,11 +25,13 @@ try {
     'lookup_keys' => [$_POST['lookup_key']],
     'expand' => ['data.product']
   ]);
-  if ($_POST['newsletter']=='on'){
+  // echo "<pre>";print_r($prices);die();
+  if (isset($_POST['newsletter'])){
     $metadata = array('newsletter' => "Yes");
   } else {
     $metadata = array();
   }
+  // echo "<pre>";print_r($prices);die();
   $checkout_session = \Stripe\Checkout\Session::create([
     'line_items' => [[
       'price' => $prices->data[0]->id,

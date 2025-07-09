@@ -7,26 +7,12 @@ image : "images/donate/1.png"
 sponsor: sponsor a child
 sponsor_desc: every donation
 
-one:
-  # - amount: "USD 20"
-  #   url: "https://donate.stripe.com/dR68zY5sacrvdI43cr"
-  - amount: "$ 25"
-    url: "https://buy.stripe.com/28oaI6f2K9fj1Zm6oJ"
-    info: "Edu - 1 child 1 month"
-  - amount: "$ 35"
-    url: "https://buy.stripe.com/7sI4jIbQy77b6fC3cy"
-    info: "baby bag for new born"
-  - amount: "$ 250"
-    url: "https://donate.stripe.com/8wM5nMdYG4Z3avSbJ0"
-    info: "Normal birth cost"
-  - amount: "$ 300"
-    url: "https://buy.stripe.com/fZe3fE1bUezD6fCeVh"
-    info: "Edu - 1 child 1 year"
-  - amount: "$ 500"
-    url: "https://donate.stripe.com/14k8zY8Em3UZavS14n"
-    info: "single set full birth cost"
-  - amount: "Any Amount"
-    url: "https://donate.stripe.com/7sIdUiaMu4Z333q4gA"
-    info: ""
+# demo
+monthly: monthly
+annually: annualy
+
+# own testing
+# monthly: monthly-28f4af8
+# annually: annualy-eea620f
 
 ---

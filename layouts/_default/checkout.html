@@ -6,24 +6,7 @@
       <div class="col-12 col-12 mt-5 ">
         <div class="container bg-green">
           <div class="container  p-3 rounded-2">
-          <div class="row px-md-5 row-eq-height mt-5">
-            <div class="col-md-6 col-6  align-mid">
-              <a class="col btn btn-white rounded-2 py-3 active" id="stripe-tab" data-toggle="tab" href="#stripe" role="tab" aria-controls="home" aria-selected="true">Stripe</a>
-            </div>
-
-            <div class="col-md-6 col-6  align-mid">
-               <a class="col btn btn-white rounded-2 py-3" id="gdg-tab" data-toggle="tab" href="#gdg" role="tab" aria-controls="profile" aria-selected="false">GDG<span style="font-size: 0.8em;">(tax benefit)</span></a>
-            </div>
-            <div class="col-md-6 col-6 mt-2 align-mid">
-            </div>
-            <div class="col-md-6 col-6 mt-2 align-mid">
-              <p>tax benefit for USA, Aus, Nz</p>
-            </div>
-          </div>
-        </div>
-        <div class="tab-content pb-4" id="paymentTabContent">
-        	<div class="tab-pane fade show active" id="stripe" role="tabpanel" aria-labelledby="profile-tab">
-	        <div class="container  p-3 rounded-2" id="payment">
+          <div class="container  p-3 rounded-2" id="payment">
 	          <div class="row px-md-5 row-eq-height  pb-5">
 	          	<div class="col-12 my-5 ">
 	              <h2 class=" text-white">Sponsor a Child</h2>
@@ -35,7 +18,7 @@
 	            
 	            <div class="col-12 mt-4">
 	              <form action="/create-checkout-session.php" method="POST" id="monthly">
-	                <input type="hidden" name="lookup_key" value="monthly-28f4af8" />
+	                <input type="hidden" name="lookup_key" value="{{.monthly}}" />
 	                <div class="row text-center">
 	                  <div class="col-3 bg-main py-2">
 	                    <h3 class="text-white ">$12</h3>
@@ -60,7 +43,7 @@
 
 	            <div class="col-12 mt-4">
 	              <form action="/create-checkout-session.php" method="POST" id="annualy">
-	                <input type="hidden" name="lookup_key" value="annualy-eea620f" />
+	                <input type="hidden" name="lookup_key" value="{{.annually}}" />
 	                <div class="row text-center">
 	                  <div class="col-3 bg-main py-2">
 	                    <h3 class="text-white ">$150</h3>
@@ -86,28 +69,33 @@
 	            <div class="col-12 mt-4">
 	                <div class="row text-center">
 	                  <div class="col-3 bg-main py-2">
-	                    <h3 class="text-white ">One Off</h3>
-	                    <h5 class="text-white ">Payment</h5>
+	                    <h3 class="text-white ">Any Other</h3>
+	                    <h5 class="text-white ">Amount</h5>
 	                  </div>
 	                  <div class="col-5 bg-mid  py-3 d-flex align-items-center  justify-content-center flex-column">
 	                    <div class="row">
 	                      <div class="col-12 text-left pt-1 pb-3">
 	                        <h6 class="text-white w-100 px-5">
-	                          Your donation is any amount, will make a difference in children`s lives.
+	                          Your donation of any amount, will make a difference in children`s lives.
 	                        </h6>
 	                      </div>
 	                      
 	                    </div>
 	                  </div>
 	                  <div class="col-3 bg-white py-3 d-flex align-items-center justify-content-center" style="cursor: pointer; border: 1px solid #ccc; border-radius: 5px;">
-	                    <a href="https://donate.stripe.com/7sIdUiaMu4Z333q4gA" class="h3">Donate</a>
+	                    <a href="https://donate.stripe.com/7sIdUiaMu4Z333q4gA"  onclick="return checkTNC();" class="h3">Donate</a>
 	                    
 	                  </div>
 	                </div>
 	            </div>
 	            
 	           <div class="col-12 text-white my-3 ml-1">
-	              <input type="checkbox" class="form-check-input" id="tnc" name="newsletter"> I have read and accepted the <a href="/tnc" class="tnc" target="_blank">Terms of Use</a> and <a href="/privacy"  class="tnc" target="_blank">Privacy Policy</a>.
+	              <label id="tnc-label">
+								  <input type="checkbox" class="form-check-input" id="tnc" name="newsletter">
+								  I have read and accepted the 
+								  <a href="/tnc" class="tnc" target="_blank">Terms of Use</a> and 
+								  <a href="/privacy" class="tnc" target="_blank">Privacy Policy</a>.
+								</label>
 	            </div>
 	            <div class="col-12 text-white  ml-1">
 	              <input type="checkbox" class="form-check-input tnc" id="shared-newsletter">Subscribe to our newsletter and stay updated.
@@ -117,13 +105,8 @@
 	          </div>
 	          
 	        </div>
-		      </div>
-		      <div class="tab-pane fade " id="gdg" role="tabpanel" aria-labelledby="home-tab">
-				  	<h5 class="text-center mb-3 pb-4">For Tax Benefit</h5>
-				  	<div class="raisely-donate" data-campaign-path="breathelife-gdg-j1122n" data-profile="" data-width="100%" data-height="800"><script src=https://cdn.raisely.com/v3/public/embed.js></script></div>		  	
-				  	
-				  </div>
-			</div>
+        </div>
+        
         
       </div>
    
@@ -131,13 +114,33 @@
     </div>
   </div>
 </section>
+<style>
+  .tnc-error input[type="checkbox"] {
+    outline: 2px solid red;
+    box-shadow: 0 0 5px red;
+  }
+</style>
 <script>
+  function checkTNC() {
+    const checkbox = document.getElementById('tnc');
+    const label = document.getElementById('tnc-label');
+
+    if (!checkbox.checked) {
+      alert("Please accept the Terms of Use and Privacy Policy before proceeding.");
+      // debugger;
+      label.classList.add('tnc-error');
+      return false; // Prevent link navigation
+    }
+    label.classList.remove('tnc-error');
+    return true; // Allow navigation
+  }
   function submitWithNewsletter(formId) {
     const form = document.getElementById(formId);
     const sharedCheckbox = document.getElementById('shared-newsletter');
     const tnc = document.getElementById('tnc');
+    const label = document.getElementById('tnc-label');
 
-     // Validate required fields
+     
     const requiredFields = form.querySelectorAll('[required]');
     let valid = true;
 
@@ -150,22 +153,23 @@
       }
     });
 
-    // Validate the shared checkbox
+    
     if (!tnc.checked) {
-      alert("You must agree to subscribe to our newsletter.");
+      alert("You must agree to our term and privacy.");
+      label.classList.add('tnc-error');
       valid = false;
     }
 
     if (!valid) return;
 
-    // Clone the checkbox and add it to the form
+    
     const clone = sharedCheckbox.cloneNode(true);
     clone.name = 'newsletter';
     clone.checked = sharedCheckbox.checked;
-    clone.style.display = 'none'; // hide it from view
+    clone.style.display = 'none'; 
     form.appendChild(clone);
 
-    // Submit the form
+    
     form.submit();
   }
 </script>
